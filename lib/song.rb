@@ -1,0 +1,21 @@
+require 'pry'
+class Song 
+  attr_accessor :name, :artist, :genre
+  
+  @@count = 0
+  
+  def intialize(name, artist, genre)
+    @name = name 
+    @artist = artist
+    @genre = genre
+    @@count += 1
+  end 
+  
+  def self.new(name, artist, genre)
+    # binding.pry
+  end 
+  
+  def self.name
+    @name
+  end
+end 
